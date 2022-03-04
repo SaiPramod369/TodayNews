@@ -5,9 +5,78 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:#1a1a1a;
+color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.hii {
+  transition: box-shadow .3s;
+  
+  border-radius:10px;
+  border: 1px solid black;
+  background:black;
+  float: left;
+  
+}
+.hii:hover {
+  box-shadow: 0 0 11px #FF5733; 
+}
+.hi{
+  border: 0;
+}
+.hi:hover{
+  box-shadow: 0 0 11px #FF5733; 
+}
+.hil.active{
+  text-shadow: 0 0 21px #FF5733; 
+  font-size: 20px;
+  color:white ;
+  background-color:#FF5733;
+   padding:8px;
+   border-radius:5px 25px;
+}
+.hil{
+color: #FF5733;
+
+}
+.ho{
+  color:#FF5733
+}
+.ind:hover{
+
+  background-image:url("../public/india.png");
+ background-position: center;
+  
+ 
+
+ 
+}
+
+.centered {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+.centered:hover{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+
+}
+.cor:hover{
+  background-image:url("../public/coronavirus.png");
+  background-position: center;
+}
+.wod:hover{
+  background-image:url("../public/earth-globe.png");
+  background-position: center;
 }

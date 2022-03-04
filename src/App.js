@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Navb from './Navb'
+import India from './India'
+import World from './World'
+import Corona from './Corona'
+import Home from './Home'
+import { BrowserRouter,Route,Switch } from 'react-router-dom'
 
-function App() {
+
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+      <Navb/>
+     
+      <Switch>
+        <Route path="/india">
+        <India />
+        </Route>
+        <Route path="/world">
+          <World/>
+        </Route>
+        <Route path="/corona">
+          <Corona/>
+        </Route>
+       <Route path="/">
+       <Home/>
+       </Route>
+
+      </Switch>
+      </BrowserRouter>
+  
     </div>
-  );
+  )
 }
 
 export default App;
